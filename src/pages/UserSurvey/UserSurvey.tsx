@@ -47,7 +47,7 @@ export default function UserSurvey() {
 
   const onSubmit = async (data: FormSchema) => {
     const res = await fetch(
-      'http://localhost:3000/api/users/create',
+      "https://token-generation-web-app-backend.onrender.com/api/users/create",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

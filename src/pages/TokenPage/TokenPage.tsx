@@ -12,7 +12,9 @@ export default function TokenPage() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:3000/api/users/${id}`)
+    fetch(
+      `https://token-generation-web-app-backend.onrender.com/api/users/${id}`
+    )
       .then((res) => {
         if (!res.ok) throw new Error("Not found");
         return res.json();
